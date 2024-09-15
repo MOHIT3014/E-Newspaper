@@ -1,0 +1,11 @@
+.logo img{
+    height:50px;
+    margin-bottom: -20px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .logo img {
+      display: block;
+    }
+    }
