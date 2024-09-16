@@ -5,8 +5,8 @@ const Head = () => {
     <>
       <section className='head'>
         <div className='container flexSB paddingTB'>
-          <div className='logo'>
-            <img src='../images/logo.png' alt=''/>
+          <div className='banner-text'>
+          <h1>E<span>CHO</span></h1><h1>I<span>NFO</span></h1>
           </div>
           
         </div>

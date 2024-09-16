@@ -36,27 +36,29 @@ header a {
   header .flex {
     display: none;
   }
-  .barIcon {
-    display: block;
-  }
-  header .navbar {
-    position: absolute;
-    display: block;
-    background-color: #fb4c35;
-    left: 0;
-    top: 21%;
-    transition: 0.5s;
-    width: 100%;
-    height: 45vh;
-    z-index: 5;
-    padding: 50px;
-  }
-  header .navbar {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
-  header ul li {
-    margin-bottom: 30px;
-  }
+  
+    .head .logo img {
+      width: 200px; /* Reduce the logo width for mobile screens */
+    }
+  
+    header ul {
+      display: none; /* Hide the navigation items on mobile */
+    }
+  
+    .barIcon {
+      display: block; /* Show the hamburger menu on mobile */
+      font-size: 30px; /* Optionally increase the font size for better visibility */
+    }
+  
+    header {
+      padding: 10px 20px; /* Adjust padding for mobile screens */
+    }
+  
+    header li {
+      margin-right: 15px; /* Reduce margin between list items for mobile */
+    }
+  
+    header a {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
 }

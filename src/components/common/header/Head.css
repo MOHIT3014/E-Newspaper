@@ -1,11 +1,39 @@
-.logo img{
-    height:50px;
-    margin-bottom: -20px;
-    justify-content: center;
-    align-items: center;
+.banner-text {
+  color: rgb(0, 0, 0);
+  display: flex;
+   
+  text-align: Center;
+  font-family: 'Arial', sans-serif;
+  margin-left: 20px;
+  margin-bottom: -30px;
 }
-@media screen and (max-width: 768px) {
-    .logo img {
-      display: block;
-    }
-    }
+
+/* Style for the text 'DISCUSS' */
+.banner-text h1 {
+  font-size: 45px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+/* Style for the text 'ON' */
+.banner-text h1 span {
+  color: #ff3b30; /* Red color */
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .banner-text {
+    margin-left: 10px; /* Reduce left margin for smaller screens */
+    margin-bottom: -20px; /* Adjust bottom margin */
+  }
+
+  .banner-text h1 {
+    font-size: 30px; /* Decrease font size for mobile */
+    letter-spacing: 1px; /* Adjust letter spacing for better fit */
+    margin-bottom: 10px; /* Optional: add margin below the heading */
+  }
+
+  .banner-text h1 span {
+    font-size: 28px; /* Optionally reduce the size of "ON" */
+  }
+}

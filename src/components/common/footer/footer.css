@@ -55,8 +55,44 @@ footer ul li span::before {
 .legal i {
   color: red;
 }
-@media screen and (max-width: 768px) {
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 0;
+  }
+
   footer .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Single column for mobile devices */
+    grid-gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  footer .item {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center content for better appearance */
+  }
+
+  footer .item img {
+    width: 60px;
+    height: 60px; /* Make images smaller on mobile */
+  }
+
+  footer .item p {
+    padding: 10px 0;
+    text-align: center; /* Center-align text for mobile */
+  }
+
+  footer ul li {
+    flex-direction: column; /* Stack the list items */
+    align-items: flex-start;
+  }
+
+  footer ul li span::before {
+    margin-right: 5px;
+  }
+
+  .legal {
+    padding: 10px;
+    font-size: 14px; /* Reduce font size for better fit on mobile */
   }
 }
+
